@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<style>
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #6a11cb;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .autobiography {
+            text-align: center;
+        }
+
+        .autobiography h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #6a11cb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        #content {
+            padding: 2rem;
+        }
+
+    </style>-->
+</head>
+<body>
+
+    <header>
+        <h1>Epino Maristela</h1>
+        <p>"Success is the sum of small efforts, repeated day in and day out"</p>
+    </header>
+
+
+
+    <nav>
+        <a href="#" onclick="loadContent('home')">Home</a>
+        <a href="#" onclick="loadContent('autobiography')">Autobiography</a>
+        <a href="#" onclick="loadContent('article')">Article</a>
+        <a href="#" onclick="loadContent('blog')">Blog</a>
+        <a href="#" onclick="loadContent('form')">Form</a>
+    </nav>
+
+    <div id="content">
+        <!-- Content will be loaded here -->
+        <div style="text-align: center;">
+            <h1>Welcome to My Website</h1>
+            <p>This is the home page. Use the navigation above to explore more.</p>
+            <div>
+                <h1>E2:COMPUTER</h1>
+                <p>Dive into a world of creativity and innovation with this website, designed to showcase my Projects and Lab Exercises for E2: Computer. Explore, learn, and witness the fusion of technology and creativity in every corner. Let's make coding and tech fun, exciting, and inspiring!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Epino Maristela. All rights reserved.</p>
+    </footer>
+
+        <script>
+        // Dynamically adding styles via JavaScript
+        const styles = `
+
+        `;
+
+        // Create a <style> element
+        const styleSheet = document.createElement("style");
+        styleSheet.type = "text/css";
+        styleSheet.innerText = styles;
+
+        // Append the <style> element to the head of the document
+        document.head.appendChild(styleSheet);
+
+        // Pages content
+        const pages = {
+            home: `
+                <div style="text-align: center;">
+                    <h1>Welcome to My Website</h1>
+                    <p>This is the home page. Use the navigation above to explore more.</p>
+                    <div>
+                        <h1>E2:COMPUTER</h1>
+                        <p>Dive into a world of creativity and innovation with this website, designed to showcase my Projects and Lab Exercises for E2: Computer. Explore, learn, and witness the fusion of technology and creativity in every corner. Let's make coding and tech fun, exciting, and inspiring!</p>
+                    </div>
+                </div>
+            `,
+            autobiography: `
+                <div style="text-align: center;"><h1>AUTOBIOGRAPHY</h1></div>
+                <div style="float: left; margin-right: 20px;">
+                    <img src="epino.jpg" alt="Maristela Epino" width="350" height="400">
+                </div>
+                
+                <p><b style="font-size: 24px; color: #FF5733;">Maristela Epino</b> is the second daughter of Meriam Epino and Antonio Epino. She is 20 years old, born on September 16, 2004, and currently live in Barangay Sta. Ana, Gubat, Sorsogon. She is a kind, friendly, and helpful person, but she can also be importunate and disobedient. She loves sweet foods, but dislikes spicy food. Maristela was born in Sta. Cruz, Manila and lived in Quezon City where she attended kinder garten and grade 1. Her mother only came home once a week, so her father took care of her and her younger sister. After finishing grade 1, her family decided to return to Bicol, where they continued her elementary education. They settled in Sta. Cruz, Barcelona, where her grandmother and her mother's sister lived. After a few days, her parents left her there to work in Manila. Maristela continued her schooling independently from grade 2 onwards. It was not easy since her aunt, who also had a child, was the one taking care of her. She experienced verbal abuse and harsh treatment, but she was too scared to tell her mother when she visited. After finishing grade 2, her father took her to live with her grandmother in Sta. Ana, Gubat, where she continued her education until grade 6. Her father was an alcoholic, and her mother was working in Manila, leaving Maristela to clean up after her father and endure his drunken episodes. She often stayed up late worrying and scared of her father's behavior. When Maristela graduated from high school, things improved slightly as her mother was now with her. She took entrance exams for Tourism at SSU and Criminology at SCCI. She preferred Criminology after being inspired by police officers who conducted seminars in their barangay about drugs and their effects. She wanted to become a police officer to help people. When the results were released, Maristela was very happy to see her name on the list of passers at SCCI. She no longer cared about passing at SSU because she was determined to study Criminology course. She was grateful for the opportunity her family provided her despite their financial struggles. She vowed to work hard in college to give her mother and sister a better life. She adored her mother, her ally and strength, and strived to succeed as a way of her mother's sacrifices.</p>
+            `,
+            article: `
+                <div style="text-align: center;"><h1>What is Plagiarism?</h1></div>
+                <div style="float: left; margin-right: 20px;">
+                    <img src="plag3.jpg" alt="Plagiarism" width="350" height="400">
+                </div>
+                <p><b>Plagiarism</b> is when you use someone else’s ideas, work, or words without giving them credit, making it look like it’s your own. It can happen in different ways, like copying text exactly (direct plagiarism), changing some words but not giving credit (paraphrasing plagiarism), or using your own past work again without citing it (self-plagiarism). Plagiarism goes against academic honesty and fairness, and it can lead to serious consequences like failing grades, a damaged reputation, or even legal trouble if it breaks copyright laws. Since it’s so easy to find information online, plagiarism has become a bigger issue. That’s why it’s really important to always give credit to sources and use them responsibly, so we can keep the value of original work and trust in academic and professional environments.</p>
+                <ul>
+                    <ul>
+                        <li><b>Report Cases of Plagiarism</b></li>
+                        <p>One notable case occurred in 2015 when Dr. R.L. Hizon, a prominent academic, was accused of plagiarizing portions of another scholar’s work in a research paper. This scandal sparked conversations about the prevalence of plagiarism in Filipino higher education, emphasizing the need for stricter enforcement of academic integrity policies. In 2020, the University of the Philippines (UP) also faced controversy when a faculty member was accused of copying content from a foreign research paper without proper attribution. This case highlighted gaps in plagiarism detection and the importance of raising awareness about academic honesty. Another high-profile instance involved Filipino journalist Carlos Celdran, who was accused of plagiarizing parts of his book in 2014. Although legal action wasn’t pursued, the scandal damaged Celdran's reputation and raised questions about the ethics of cultural and historical representation. Plagiarism is not limited to academic circles; it has also been a problem in Philippine politics, where politicians have been accused of copying speeches from foreign leaders or other local figures. The Philippines has laws to address intellectual property violations, such as the Intellectual Property Code of the Philippines (Republic Act No. 8293), which provides legal recourse for those whose work is plagiarized. However, despite these laws, there are ongoing challenges related to awareness and enforcement, especially in an age where digital content is easily accessible. Many Philippine universities, including the University of the Philippines, Ateneo de Manila, and De La Salle University, have implemented stricter academic integrity policies and use plagiarism detection software like Turnitin to combat this issue. While progress has been made, the challenge of preventing and addressing plagiarism remains ongoing, requiring continued education, stricter institutional policies, and a more robust legal framework to protect intellectual property and uphold academic and professional ethics in the country.</p>
+                    </ul>
+                    <ul>
+                        <div style="float: left; margin-right: 20px;">
+                            <img src="plag1.png" alt="Plagiarism" width="350" height="400">
+                        </div>
+                        <li><b>Nature of Punishment</b></li>
+                        <p>The punishment for plagiarism varies across countries, reflecting differences in intellectual property (IP) laws and cultural attitudes towards academic integrity. In the United States, plagiarism is primarily addressed through civil penalties, where individuals found guilty may face significant damages or fines, ranging from $750 to $150,000 per infringing work, depending on whether the act is considered willful. In more severe cases, criminal penalties can result in fines and up to five years of imprisonment. The UK also imposes civil actions and criminal sanctions for plagiarism, with penalties including damages and fines, and for severe cases, up to 10 years of imprisonment under copyright law. In Australia, copyright infringement can lead to fines up to $60,000 for individuals and imprisonment for serious offenders, while academic plagiarism can result in expulsion. Countries like India and China enforce criminal penalties under their copyright laws, with fines and imprisonment for commercial infringements, while academic institutions impose penalties such as expulsion or revocation of degrees for plagiarists. In Japan, plagiarism is met with civil damages and criminal charges, potentially resulting in up to 10 years of imprisonment for significant violations. South Africa follows similar patterns, with both civil remedies for copyright infringement and academic consequences for students found guilty of plagiarism. Overall, while civil actions are common in many countries, criminal penalties are reserved for more serious or commercial cases, and academic institutions worldwide are taking a stronger stance on plagiarism, implementing severe disciplinary actions, including suspension and expulsion.</p>    
+                    </ul>
+                </ul>
+            `,
+            blog: `
+                <h1>Viruses</h1>
+                <div style="float: left; margin-right: 20px;">
+                    <img src="type.avif" alt="Viruses" width="400" height="300">
+                </div>
+                <p><b>A computer virus</b> is a type of malicious software (malware) designed to spread from one computer to another, often causing harm by disrupting normal computer operations. Once a virus infects a system, it can replicate itself by attaching to files or programs, typically spreading through email attachments, infected downloads, or compromised websites. The virus is activated when a user opens or runs an infected file, and it may remain dormant for a while before carrying out its payload, which can include deleting files, stealing sensitive data, slowing down the system, or even rendering a computer unusable. There are various types of computer viruses, including file infectors, macro viruses, and boot sector viruses, each targeting different aspects of the system. Some viruses are designed to be polymorphic or metamorphic, changing their code to avoid detection by antivirus software. To protect against viruses, it is important to use up-to-date antivirus software, regularly update your operating system and applications, avoid opening suspicious emails or downloading files from untrusted sources, and back up important data. Additionally, using firewalls and strong passwords can help block unauthorized access, further reducing the risk of viral infections. Despite their malicious intent, computer viruses can be prevented and controlled through careful security practices and vigilance.</p>
+                 
+                <br>
+                <br>
+                <hr>
+                <br>
+                <div>
+                    <h1>Malware</h1>
+                    <div style="float: left; margin-right: 20px;">
+                        <img src="malware.webp" alt="Malware" width="400" height="350">
+                    </div>
+                    <p><b>Malware</b> (short for malicious software) refers to any type of software intentionally designed to cause harm to a computer system, network, or device. It encompasses a wide range of malicious programs, including viruses, worms, trojans, ransomware, spyware, adware, and more. Malware can be used to steal sensitive information, corrupt files, spy on users, hijack devices, or disrupt system operations. It is typically delivered through infected email attachments, malicious downloads, compromised websites, or software vulnerabilities. Once installed, malware can perform a variety of harmful actions, such as logging keystrokes to capture passwords, encrypting files to demand a ransom (as in ransomware), or even gaining control of a device to create a botnet for further attacks. The effects of malware can range from minor annoyances, like unwanted ads or slow performance, to serious security breaches, including data theft, financial loss, or system crashes. Protecting against malware involves using antivirus software, keeping systems updated, practicing safe browsing habits, and avoiding suspicious links or attachments.</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <div>
+                    <h1>Spam</h1>
+                    <div style="float: left; margin-right: 20px;">
+                        <img src="spam.jpg" alt="Spam" width="400" height="350">
+                    </div>
+                    <p><b>Spam</b> refers to unsolicited or unwanted messages, typically sent in bulk, that are often delivered via email, but can also appear in other forms like text messages, social media, or even instant messaging. The most common form of spam is email spam, where advertisers or malicious actors send large volumes of emails, often for the purpose of promoting products, services, or attempting fraudulent activities like phishing. Spam emails can be harmless, such as irrelevant advertisements, but they can also contain malware or links to fraudulent websites designed to steal personal information, making them a security risk. Spammers often use automated tools to send messages to thousands or millions of recipients, exploiting email addresses gathered through various means, such as web scraping or purchasing from compromised databases. The main issues with spam are its nuisance, the strain it puts on email systems, and its potential to serve as a gateway for more harmful activities like identity theft or the distribution of malware. To combat spam, many email providers use spam filters to detect and block suspicious messages, and users are advised to be cautious when opening emails from unknown senders, especially if they contain attachments or links.</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <div>
+                    <h1>AntiViruses</h1>
+                    <div style="float: left; margin-right: 20px;">
+                        <img src="antiVirus.png" alt="AntiViruses" width="400" height="350">
+                    </div>
+                    <p><b>Antivirus</b> software is a type of program designed to detect, prevent, and remove malicious software (malware) from computer systems, networks, and devices. Its primary function is to protect a computer from viruses, worms, trojans, ransomware, spyware, and other types of malware that can cause damage, steal data, or disrupt operations. Antivirus programs work by scanning files, applications, and websites for known patterns of malicious code (signatures) and behaviors that are indicative of a virus or other malware. Modern antivirus software often includes additional features such as real-time protection, which actively monitors system activity and automatically blocks threats before they can cause harm, and heuristic analysis, which can identify new or unknown malware based on suspicious patterns. Some antivirus programs also offer protection against phishing attacks, which attempt to trick users into revealing sensitive information, and include firewalls to block unauthorized access to a system. Regular updates to the antivirus database are crucial to ensure protection against the latest threats, as malware creators continuously evolve their methods to bypass detection. While antivirus software is an essential tool for maintaining cybersecurity, it is not foolproof, and users are still advised to practice safe browsing, avoid suspicious downloads, and keep their systems updated to further reduce the risk of infection.</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+            `,
+            form: `
+                <div style="text-align: center;">
+                    <h1>Make a Message</h1>
+                    <form>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" required><br><br>
+
+                        <label for="firstname">First Name:</label><br>
+                        <input type="text" id="firstname" name="firstname" required><br><br>
+
+                        <label for="lastname">Last Name:</label><br>
+                        <input type="text" id="lastname" name="lastname" required><br><br>
+
+                        <label for="age">Age:</label><br>
+                        <input type="number" id="age" name="age" required><br><br>
+
+                        <label for="birthdate">Birthdate:</label><br>
+                        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>`
+        };
+
+        function loadContent(page) {
+            const contentDiv = document.getElementById('content');
+            contentDiv.innerHTML = pages[page] || '<h1>Page Not Found</h1>';
+        }
+    </script>
+</body>
+</html>
